@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import App from './App'
 import AboutPage from './pages/AboutPage'
-// import PortfolioPage from './pages/PortfolioPage'
 import ContactPage from './pages/ContactPage'
+import PortfolioPage from './pages/PortfolioPage'
 // import ResumePage from './pages/ResumePage'
 import ErrorPage from './pages/ErrorPage'
 
@@ -25,10 +25,10 @@ const router = createBrowserRouter([
         path: '/Contact',
         element: <ContactPage />
       },
-      // {
-      //   path: '/Portfolio',
-      //   element: <PortfolioPage />
-      // },
+      {
+        path: '/Portfolio',
+        element: <PortfolioPage />
+      },
       // {
       //   path: '/Resume',
       //   element: <ResumePage />
