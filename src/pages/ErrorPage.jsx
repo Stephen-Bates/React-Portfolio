@@ -4,7 +4,7 @@ export default function ErrorPage() {
     const error = useRouteError();
 
     return (
-        <div id="error-page">
+        <div>
             <h3>Something went wrong!</h3>
             <p>An unexpected error has occured</p>
             <br />
