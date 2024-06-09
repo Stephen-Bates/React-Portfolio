@@ -75,7 +75,7 @@ export default function ContactForm() {
     }
 
     return (
-        <Form className="p-3 bg-body-tertiary" onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
