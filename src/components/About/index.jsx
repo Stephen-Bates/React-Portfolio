@@ -2,10 +2,10 @@ import SectionHeader from "../utils/SectionHeader"
 
 export default function About() {
     return (
-        <section>
+        <section className="px-4 py-5 my-5 text-center">
             <SectionHeader text={'About Me'} />
-            <div>
-                <p>
+            <div className="col-lg-6 mx-auto">
+                <p className="lead mb-4">
                     I'm a Fullstack developer who has been studying computers since early highschool.
                     In my early years, I would spend my free time indipendantly developing video games.
                     As I grew older, I became very interested in manufacturing and spent several years working in factories, learning everything I could about the trade.

@@ -1,16 +1,19 @@
-import { Link } from 'react-router-dom';
 import Navigation from './Navigation';
+import { Nav, Navbar, Container } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => {
   return (
-    <header>
-      <div>
-        <Link to="/">
-          <h1>Stephen Bates</h1>
-        </Link>
-        <Navigation />
-      </div>
-    </header>
+    <Navbar expand='lg' className='lead bg-body-tertiary'>
+      <Container>
+        <LinkContainer to="/">
+          <Navbar.Brand>Stephen Bates</Navbar.Brand>
+        </LinkContainer>
+        <Nav>
+          <Navigation />
+        </Nav>
+      </Container>
+    </Navbar>
   );
 };
 

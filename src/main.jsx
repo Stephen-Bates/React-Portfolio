@@ -3,36 +3,36 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import App from './App'
-import About from './pages/AboutPage'
-import Portfolio from './pages/PortfolioPage'
-import Contact from './pages/ContactPage'
-import Resume from './pages/ResumePage'
-import Error from './pages/ErrorPage'
+import AboutPage from './pages/AboutPage'
+// import PortfolioPage from './pages/PortfolioPage'
+import ContactPage from './pages/ContactPage'
+// import ResumePage from './pages/ResumePage'
+import ErrorPage from './pages/ErrorPage'
 
-import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        element: <About />
+        element: <AboutPage />
       },
       {
         path: '/Contact',
-        element: <Contact />
+        element: <ContactPage />
       },
-      {
-        path: '/Portfolio',
-        element: <Portfolio />
-      },
-      {
-        path: '/Resume',
-        element: <Resume />
-      },
+      // {
+      //   path: '/Portfolio',
+      //   element: <PortfolioPage />
+      // },
+      // {
+      //   path: '/Resume',
+      //   element: <ResumePage />
+      // },
     ]
   }
 ])
