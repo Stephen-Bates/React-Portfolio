@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap"
 
-export default function ProjectCard({ title, description, img, address }) {
+export default function Project({ title, description, img, address }) {
     return (
         <a href={address} target="_blank" style={{ textDecoration: 'none' }}>
             <Card className="m-3 bg-primary lead" >
