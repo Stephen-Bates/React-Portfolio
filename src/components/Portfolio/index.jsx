@@ -1,7 +1,7 @@
 import SectionHeader from "../utils/SectionHeader"
 import { Container } from "react-bootstrap"
 import ProjectList from "./ProjectList"
-import ProjectCard from "./Project"
+import Project from "./Project"
 
 export default function Portfolio() {
     return (
@@ -12,7 +12,7 @@ export default function Portfolio() {
             </p>
             <Container className="col-lg-6 mx-auto">
                 {ProjectList.map(project => (
-                    <ProjectCard title={project.title} description={project.description} img={project.img} address={project.address} />
+                    <Project title={project.title} description={project.description} img={project.img} address={project.address} />
                 ))}
             </Container>
         </Container>
