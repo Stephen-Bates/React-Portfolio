@@ -9,7 +9,8 @@ import PortfolioPage from './pages/PortfolioPage'
 import ResumePage from './pages/ResumePage'
 import ErrorPage from './pages/ErrorPage'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import './main.css'
 
 const router = createBrowserRouter([
   {
