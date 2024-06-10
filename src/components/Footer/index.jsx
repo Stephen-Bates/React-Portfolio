@@ -11,7 +11,7 @@ export default function Footer() {
                 <a href="https://github.com/Stephen-Bates">
                     <FaGithub />
                 </a>
-                <a href="https://https://stackoverflow.com/users/25501184/stephen-bates">
+                <a href="https://stackoverflow.com/users/25501184/stephen-bates">
                     <FaStackOverflow />
                 </a>
             </div>
