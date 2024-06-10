@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className='lead bg-secondary'>
             {/* but not really */}
             <div className="flex">
-                <a href="www.linkedin.com/in/stephen-bates-3b751a86">
+                <a href="https://linkedin.com/in/stephen-bates-3b751a86">
                     <FaLinkedin />
                 </a>
                 <a href="https://github.com/Stephen-Bates">
