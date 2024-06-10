@@ -1,8 +1,19 @@
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 export default function Footer() {
     return (
-        <footer className='lead mx-auto bg-secondary center'>
+        <footer className='lead bg-secondary'>
             {/* but not really */}
-            <p className="px-auto mx-auto align-middle">Stephen Bates &copy; 2024</p>
+            <div className="flex">
+                <a href="www.linkedin.com/in/stephen-bates-3b751a86">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com/Stephen-Bates">
+                    <FaGithub />
+                </a>
+            </div>
+            <p className="px-auto text-primary mx-auto align-middle">Stephen Bates &copy; {new Date().getFullYear()}</p>
+            
         </footer>
     );
-};
+}
