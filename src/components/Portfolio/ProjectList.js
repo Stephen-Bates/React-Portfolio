@@ -3,6 +3,7 @@ import noteTakerSnapshot from '/src/assets/Note-Taker-snapshot.png'
 import passwordGeneratorSnapshot from '/src/assets/Password-Generator-snapshot.png'
 import sojournalSnapshot from '/src/assets/soJournal-snapshot.png'
 import textAppSnapshot from '/src/assets/text-app-snapshot.png'
+import weatherDashSnapshot from '/src/assets/Weather-Dash-snapshot.png'
 
 const ProjectList = [
     {
@@ -34,6 +35,12 @@ const ProjectList = [
         description: 'This app utilizes a MERN stack to allow users to register with the site and save a list of books that they can search for',
         img: bookSearchSnapshot,
         address: 'https://github.com/Stephen-Bates/Book-Search'
+    },
+    {
+        title: 'Weather Dash',
+        description: 'This project was a daily+5 day weather forecast dashboard',
+        img: weatherDashSnapshot,
+        address: 'https://github.com/Stephen-Bates/Weather-Dash'
     },
 ]
 
