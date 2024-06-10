@@ -6,7 +6,7 @@ import App from './App'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import PortfolioPage from './pages/PortfolioPage'
-// import ResumePage from './pages/ResumePage'
+import ResumePage from './pages/ResumePage'
 import ErrorPage from './pages/ErrorPage'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,10 +29,10 @@ const router = createBrowserRouter([
         path: '/Portfolio',
         element: <PortfolioPage />
       },
-      // {
-      //   path: '/Resume',
-      //   element: <ResumePage />
-      // },
+      {
+        path: '/Resume',
+        element: <ResumePage />
+      },
     ]
   }
 ])
