@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -11,9 +11,12 @@ export default function Footer() {
                 <a href="https://github.com/Stephen-Bates">
                     <FaGithub />
                 </a>
+                <a href="https://https://stackoverflow.com/users/25501184/stephen-bates">
+                    <FaStackOverflow />
+                </a>
             </div>
             <p className="px-auto text-primary mx-auto align-middle">Stephen Bates &copy; {new Date().getFullYear()}</p>
-            
+
         </footer>
     );
 }
