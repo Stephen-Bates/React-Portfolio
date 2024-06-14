@@ -16,7 +16,7 @@ export default function ContactForm() {
 
 
     function validateEmail(email) {
-        return /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email.trim().toLowerCase());
+        return /^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(email.trim().toLowerCase());
     }
 
     function validateForm() {

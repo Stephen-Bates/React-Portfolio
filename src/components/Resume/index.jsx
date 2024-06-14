@@ -9,18 +9,18 @@ export default function Resume() {
         <Container >
             <Container className="px-4 py-5 my-5 rounded-5 shadow bg-secondary text-center">
                 <SectionHeader text={'Resume'} />
-            <p className="lead mb-4">
-                You can download a copy of my resume
-            </p>
-            <a href={resumeLink} download>Here</a>
+                <p className="lead mb-4">
+                    You can download a copy of my resume
+                </p>
+                <a href={resumeLink} download>Here</a>
             </Container>
             <Container className="px-4 py-5 my-5 rounded-5 shadow bg-secondary text-center">
                 <SectionHeader text={'Skills'} />
                 <p className="lead mb-4">
                     List of skills:
                 </p>
-                {Skills.map(skill => (
-                    <p>{skill}</p>
+                {Skills.map((skill, key) => (
+                    <p key={key}>{skill}</p>
                 ))}
             </Container>
         </Container>

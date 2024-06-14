@@ -11,7 +11,7 @@ const pages = [
 export default function Navigation() {
     return (
         pages.map(page => (
-            <LinkContainer to={page.address}>
+            <LinkContainer to={page.address} key={page.name}>
                 <Nav.Link>{page.name}</Nav.Link>
             </LinkContainer>
         ))

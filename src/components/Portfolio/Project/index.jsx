@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types'
 import { Card } from "react-bootstrap"
 
-export default function Project({ title, description, img, address }) {
+function Project({ title, description, img, address }) {
     return (
         <a href={address} target="_blank" style={{ textDecoration: 'none' }}>
             <Card className="m-3 bg-primary lead" >
@@ -13,3 +14,12 @@ export default function Project({ title, description, img, address }) {
         </a>
     )
 }
+
+Project.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    img: PropTypes.string,
+    address: PropTypes.string,
+}
+
+export default Project
